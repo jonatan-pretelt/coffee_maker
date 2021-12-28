@@ -26,7 +26,7 @@ MENU = {
 money = 0
 
 resources = {
-    "water": 100,
+    "water": 300,
     "milk": 200,
     "coffee": 100,
 }
@@ -51,6 +51,8 @@ def process_coins():
     total = int(input("Enter number of quarters: "))*0.25
     total += int(input("Enter number of dimes: "))*0.10
     total += int(input("Enter number of nickles: "))*0.05
+    total += int(input("Enter number of pennies: "))*0.01
+
     return round(total, 2)
 
 
